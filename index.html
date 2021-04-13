@@ -12,130 +12,320 @@
     <title>Bootstrap-website</title>
   </head>
   <body>
-      <!-- navigation bar with search box -->
+    <!-- navigation bar with search box -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Dropdown</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+              Search
             </button>
-          
-            <div class="collapse navbar-collapse" id="navbarColor01">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home
-                    <span class="sr-only">(current)</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                  </div>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
+          </form>
+        </div>
+      </nav>
     </header>
     <main role="main">
-        <!-- carousel imgs -->
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img/champs.jpg" class="d-block w-100 black-white" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./img/pasture.jpg" class="d-block w-100 black-white" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./img/snow.jpg" class="d-block w-100 black-white" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+      <!-- carousel imgs -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
-        <!-- three columns with rounded imgs -->
-        <hr class="divider">
-          <div class="container-fluid">
-              <div class="row">
-                  <div class="col-lg-4">
-                      <img class="rounded-circle black-white" src="./img/foals.jpg" width="200" height="200">
-                      <h2>heading</h2>
-                      <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem vel temporibus saepe doloremque ipsam eum reprehenderit nemo est voluptatibus odio omnis eligendi, dolorum dicta nobis nostrum ullam enim minima. lorem50 "</p>      
-                      <p><a href="#" class="btn btn-secondary" role="button">View details</a></p>            
-                  </div>
-                  <div class="col-lg-4"><img class="rounded-circle black-white" src="./img/young.jpg" width="200" height="200">
-                    <h2>heading</h2>
-                    <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem vel temporibus saepe doloremque ipsam eum reprehenderit nemo est voluptatibus odio omnis eligendi, dolorum dicta nobis nostrum ullam enim minima. "</p>      
-                    <p><a href="#" class="btn btn-secondary" role="button">View details</a></p>  </div>
-                  <div class="col-lg-4"><img class="rounded-circle black-white" src="./img/mares.jpg" width="200" height="200">
-                    <h2>heading</h2>
-                    <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia exercitationem vel temporibus saepe doloremque ipsam eum reprehenderit nemo est voluptatibus odio omnis eligendi, dolorum dicta nobis nostrum ullam enim minima. "</p>      
-                    <p><a href="#" class="btn btn-secondary" role="button">View details</a></p>  </div>
-              </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/champs.jpg"
+              class="d-block w-100 black-white"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
           </div>
-          <!-- blog posts, text and picture -->
-          <hr class="divider">
-          <div class="container-fluid">
-              <div class="row">
-                  <div class="col-md-7">
-                      <h2 class="heading">Check out, what's special. <span class="text-muted">About our horses.</span></h2>
-                      <p class="lead">" Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, perferendis! Rerum eveniet excepturi optio tenetur harum a nesciunt sunt nostrum corrupti quis, nobis quidem magni. Ratione dicta libero rerum quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque pariatur placeat optio dolorem rem, eveniet, maxime, reiciendis beatae sint alias dignissimos culpa animi et autem. Commodi dicta culpa ducimus sed exercitationem, est aperiam possimus, dolorum ratione blanditiis nihil suscipit deleniti eos libero quaerat molestias quae a eaque corporis. Fuga, sapiente. "</p>
-                  </div>
-                  <div class="col-md-5"><img src="./img/young.jpg" width="500px" class="img-fluid mx-auto black-white" alt=""></div>
-                  <div class="col-md-7">
-                    <h2 class="heading">Check out, what's special. <span class="text-muted">About our horses.</span></h2>
-                    <p class="lead">" Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, perferendis! Rerum eveniet excepturi optio tenetur harum a nesciunt sunt nostrum corrupti quis, nobis quidem magni. Ratione dicta libero rerum quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque pariatur placeat optio dolorem rem, eveniet, maxime, reiciendis beatae sint alias dignissimos culpa animi et autem. Commodi dicta culpa ducimus sed exercitationem, est aperiam possimus, dolorum ratione blanditiis nihil suscipit deleniti eos libero quaerat molestias quae a eaque corporis. Fuga, sapiente. "</p>
-                </div>
-                <div class="col-md-5"><img src="./img/young.jpg" width="500px" class="img-fluid mx-auto black-white" alt=""></div>
-                <div class="col-md-7">
-                    <h2 class="heading">Check out, what's special. <span class="text-muted">About our horses.</span></h2>
-                    <p class="lead">" Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, perferendis! Rerum eveniet excepturi optio tenetur harum a nesciunt sunt nostrum corrupti quis, nobis quidem magni. Ratione dicta libero rerum quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque pariatur placeat optio dolorem rem, eveniet, maxime, reiciendis beatae sint alias dignissimos culpa animi et autem. Commodi dicta culpa ducimus sed exercitationem, est aperiam possimus, dolorum ratione blanditiis nihil suscipit deleniti eos libero quaerat molestias quae a eaque corporis. Fuga, sapiente. "</p>
-                </div>
-                <div class="col-md-5"><img src="./img/young.jpg" width="500px" class="img-fluid mx-auto black-white" alt="">
-                </div>
-              </div>
+          <div class="carousel-item">
+            <img
+              src="./img/pasture.jpg"
+              class="d-block w-100 black-white"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
           </div>
+          <div class="carousel-item">
+            <img
+              src="./img/snow.jpg"
+              class="d-block w-100 black-white"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- three columns with rounded imgs -->
+      <hr class="divider" />
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4">
+            <img
+              class="rounded-circle black-white"
+              src="./img/foals.jpg"
+              width="200"
+              height="200"
+            />
+            <h2>heading</h2>
+            <p>
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Mollitia exercitationem vel temporibus saepe doloremque ipsam eum
+              reprehenderit nemo est voluptatibus odio omnis eligendi, dolorum
+              dicta nobis nostrum ullam enim minima. lorem50 "
+            </p>
+            <p>
+              <a href="#" class="btn btn-secondary" role="button"
+                >View details</a
+              >
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <img
+              class="rounded-circle black-white"
+              src="./img/young.jpg"
+              width="200"
+              height="200"
+            />
+            <h2>heading</h2>
+            <p>
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Mollitia exercitationem vel temporibus saepe doloremque ipsam eum
+              reprehenderit nemo est voluptatibus odio omnis eligendi, dolorum
+              dicta nobis nostrum ullam enim minima. "
+            </p>
+            <p>
+              <a href="#" class="btn btn-secondary" role="button"
+                >View details</a
+              >
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <img
+              class="rounded-circle black-white"
+              src="./img/mares.jpg"
+              width="200"
+              height="200"
+            />
+            <h2>heading</h2>
+            <p>
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Mollitia exercitationem vel temporibus saepe doloremque ipsam eum
+              reprehenderit nemo est voluptatibus odio omnis eligendi, dolorum
+              dicta nobis nostrum ullam enim minima. "
+            </p>
+            <p>
+              <a href="#" class="btn btn-secondary" role="button"
+                >View details</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- blog posts, text and picture -->
+      <hr class="featurette-divider" />
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-7">
+            <h2 class="heading">
+              Check out, what's special.
+              <span class="text-muted">About our horses.</span>
+            </h2>
+            <p class="lead">
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+              perferendis! Rerum eveniet excepturi optio tenetur harum a
+              nesciunt sunt nostrum corrupti quis, nobis quidem magni. Ratione
+              dicta libero rerum quia. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Itaque pariatur placeat optio dolorem rem,
+              eveniet, maxime, reiciendis beatae sint alias dignissimos culpa
+              animi et autem. Commodi dicta culpa ducimus sed exercitationem,
+              est aperiam possimus, dolorum ratione blanditiis nihil suscipit
+              deleniti eos libero quaerat molestias quae a eaque corporis. Fuga,
+              sapiente. "
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img
+              src="./img/young.jpg"
+              width="500px"
+              class="img-fluid mx-auto black-white"
+              alt=""
+            />
+          </div>
+          </div>
+        </div>
+        <hr class="featurette-divider" />
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-7">
+              <h2 class="heading">
+                Check out, what's special.
+                <span class="text-muted">About our horses.</span>
+              </h2>
+              <p class="lead">
+                " Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                perferendis! Rerum eveniet excepturi optio tenetur harum a
+                nesciunt sunt nostrum corrupti quis, nobis quidem magni. Ratione
+                dicta libero rerum quia. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Itaque pariatur placeat optio dolorem rem,
+                eveniet, maxime, reiciendis beatae sint alias dignissimos culpa
+                animi et autem. Commodi dicta culpa ducimus sed exercitationem,
+                est aperiam possimus, dolorum ratione blanditiis nihil suscipit
+                deleniti eos libero quaerat molestias quae a eaque corporis. Fuga,
+                sapiente. "
+              </p>
+            </div>
+            <div class="col-md-5">
+              <img
+                src="./img/young.jpg"
+                width="500px"
+                class="img-fluid mx-auto black-white"
+                alt=""
+              />
+            </div>
+            </div>
+          </div>
+          <hr class="featurette-divider" />
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-7">
+                <h2 class="heading">
+                  Check out, what's special.
+                  <span class="text-muted">About our horses.</span>
+                </h2>
+                <p class="lead">
+                  " Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                  perferendis! Rerum eveniet excepturi optio tenetur harum a
+                  nesciunt sunt nostrum corrupti quis, nobis quidem magni. Ratione
+                  dicta libero rerum quia. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Itaque pariatur placeat optio dolorem rem,
+                  eveniet, maxime, reiciendis beatae sint alias dignissimos culpa
+                  animi et autem. Commodi dicta culpa ducimus sed exercitationem,
+                  est aperiam possimus, dolorum ratione blanditiis nihil suscipit
+                  deleniti eos libero quaerat molestias quae a eaque corporis. Fuga,
+                  sapiente. "
+                </p>
+              </div>
+              <div class="col-md-5">
+                <img
+                  src="./img/young.jpg"
+                  width="500px"
+                  class="img-fluid mx-auto black-white"
+                  alt=""
+                />
+              </div>
+              </div>
+            </div>
       </div>
     </main>
     <!-- bootstrap- javascript -->
